@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="ssh://gerritgit/" name="gerritgit" review="git.amd.com:8080"/>
+  
+  <default remote="gerritgit" revision="amd-mainline" sync-c="true" sync-j="4"/>
+  
+  <project name="DevTools/ec/HWDebugger" path="dev-tools/HWDebugger" revision="600e4e3227043ede2472668e7fef345c65ab5dce" upstream="amd-master"/>
+  <project name="DevTools/ec/RCP" path="dev-tools/RCP" revision="9f1b893225341aa64dc9eca17ded8185523a133e" upstream="amd-master"/>
+  <project name="DevTools/ec/RCP-Internal" path="dev-tools/RCP-Internal" revision="a2c97dfb152bb97bc0fa79837dd95b4ddbbdc852" upstream="master"/>
+  <project name="DevTools/ec/ROCm-GPUDebugSDK" path="dev-tools/ROCm-GPUDebugSDK" revision="3e9d2df9489e2438c520448312dc219ba35758c8" upstream="amd-master"/>
+  <project name="DevTools/ec/common-lib-amd-sp3" path="dev-tools/Common/Lib/AMD/sp3" revision="fc8d9f881d3fd773fe7304e4ca80fdff69f51137" upstream="amd-master"/>
+  <project name="DevTools/ec/common-lib-ext-Boost-1.59" path="dev-tools/Common/Lib/Ext/Boost" revision="d50f858fdff41c549595bb1c84d236206d117772" upstream="master"/>
+  <project name="DevTools/ec/common-lib-ext-GRLibDWARF" path="dev-tools/Common/Lib/Ext/GRLibDWARF" revision="916e61845013b581aaa3d8d28cb856edc06a3093" upstream="master"/>
+  <project name="DevTools/ec/common-lib-ext-GoogleTest-1.7" path="dev-tools/Common/Lib/Ext/GoogleTest" revision="e6db51ed4f359551e2d0db743141b3c69c324ada" upstream="master"/>
+  <project name="DevTools/ec/common-src-CElf" path="dev-tools/Common/Src/CElf" revision="5e5823700a8395456ad8ff3507f4260012e0e602" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-DeviceInfo" path="dev-tools/Common/Src/DeviceInfo" revision="e50f0a893e76e6d94462641d6b167aaea83ceee0" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-DeviceInfo-Internal" path="dev-tools/Common/Src/DeviceInfo-Internal" revision="8e6451abe89f415aadc06c1ed77a41c6098ece94" upstream="master"/>
+  <project name="DevTools/ec/common-src-DynamicLibraryModule" path="dev-tools/Common/Src/DynamicLibraryModule" revision="4c0cb35c3fa1de2ac7547bbb989518282edccb2c" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-HSADeviceInfo" path="dev-tools/Common/Src/HSADeviceInfo" revision="da1bc80246e73431e6f3a469dbde061820c1a158" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-HSAResourceManager" path="dev-tools/Common/Src/HSAResourceManager" revision="2198157731fcfe92179d6d53b495bfedf3470b63" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-HSATestCommon" path="dev-tools/Common/Src/HSATestCommon" revision="f4cee634711b5db936f6bc078e4bada07bec41c5" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-TSingleton" path="dev-tools/Common/Src/TSingleton" revision="2a338d5b7e649ffba0225772c521726c18b13fff" upstream="amd-master"/>
+  <project name="DevTools/ec/common-src-sp3" path="dev-tools/Common/Src/sp3" revision="e610839f37c159685cb78cf155f061b6bc00e1bc" upstream="master"/>
+  <project name="brahma/ec/linux" path="kernel" revision="8849be9315264dd8f962510c0595f31433717138" upstream="amd-kfd-staging"/>
+  <project name="brahma/ec/utility/brahma-utils" path="brahma-utils" revision="a8df3d0f27c65089c85a235e07157a4d158e862c" upstream="master"/>
+  <project name="compute/ec/MlOpen" path="external/miopen" revision="bc7aac272686278fd88a62aad008ed44f6b57f32" upstream="master"/>
+  <project name="compute/ec/amdp2p" path="drivers/amdp2p" revision="b25d3fe42ef511250ea5148d2ebd9bfd28fa23ee" upstream="master"/>
+  <project name="compute/ec/atmi" path="external/atmi" revision="de867f25387fa4ef1e401c7b5504aec46076b56a" upstream="master"/>
+  <project name="compute/ec/chelsio" path="external/p2p/chelsio" revision="fbbc0f8f43a6e2955a3a807d35ecabe2bf4865b1" upstream="master"/>
+  <project name="compute/ec/chimex" path="external/benchmarks/chimex" revision="72e648eb957af9aeeda35131514f709b3d3ba307" upstream="master"/>
+  <project name="compute/ec/gpu-stream" path="external/benchmarks/gpu-stream" revision="b53fb1b3b288634dd9499171eb7677ec812841b1" upstream="amd-master"/>
+  <project name="compute/ec/gpuburn" path="tests/gpuburn" revision="96e0ccc7644b0950513315bd686aa3bb4b0b1351" upstream="master"/>
+  <project name="compute/ec/hcc-tot/clang" path="external/hcc-tot/clang" revision="993582eae1419061f3c4f3bf324d74bf29d9c6f4" upstream="clang_tot_upgrade-alloca"/>
+  <project name="compute/ec/hcc-tot/compiler-rt" path="external/hcc-tot/compiler-rt" revision="fb189012ee81a46d098c225a2cc453141e5690d4" upstream="amd-hcc"/>
+  <project name="compute/ec/hcc-tot/lld" path="external/hcc-tot/lld" revision="99d2eb9858be2461b1316b769467e7ba49d27338" upstream="amd-hcc-alloca"/>
+  <project name="compute/ec/hcc-tot/llvm" path="external/hcc-tot/compiler" revision="c2974ca4a78740519fadf3ebae91bee45beb56ff" upstream="amd-hcc-alloca"/>
+  <project name="compute/ec/hip" path="external/hip/hip" revision="75f8840ca9822915697c82ef45b8047ed872ee3e" upstream="amd-master"/>
+  <project name="compute/ec/hip-examples" path="external/hip/hip-examples" revision="74090aa5dbd6041e7dd2e0842a2fdba634f6e9a4" upstream="amd-master"/>
+  <project name="compute/ec/hip-examples-private" path="external/hip/hip-examples-private" revision="5a2147424efc819901dd5b9d3cde2dfa101ef2ef" upstream="amd-master"/>
+  <project name="compute/ec/hlc" path="external/hlc" revision="1b8f167dc77a6059e10dca3446e518c64e73f0d7" upstream="hsail-stable-3.7"/>
+  <project name="compute/ec/hsail-tools" path="external/hsail-tools" revision="12220b0ddccd4559e979906bfd65fb49fcdd7854" upstream="master"/>
+  <project name="compute/ec/ibv_rc_pingpong-amd" path="tests/ibv_rc_pingpong-amd" revision="4ccc45d1d9ecec542863b763d0044eb9aeaf5fd7" upstream="master"/>
+  <project name="compute/ec/infrastructure" path="infrastructure" revision="dd08ec6d4fd6f6289c06f760633faa32bbff97b5" upstream="amd-master"/>
+  <project name="compute/ec/jenkins-utils" path="jenkins-utils" revision="a462ca8d04dabfb9034d5b22dc3dfe7fbd7abcb4" upstream="amd-master"/>
+  <project name="compute/ec/kfdtest" path="tests/kfdtest" revision="04f979b8b3df981997aaa2e676f17dc90588e526" upstream="master"/>
+  <project name="compute/ec/libhsakmt" path="libhsakmt" revision="444d3df80c685e8c43f14513b5fed8b9d94ae1d8" upstream="amd-staging"/>
+  <project name="compute/ec/linux-dkms" path="drivers/linux-dkms" revision="72a568291a708cc0ea0c881e5969583f96f56db9" upstream="master"/>
+  <project name="compute/ec/mellanox" path="external/p2p/mellanox" revision="36c7fa7d8dd1cbdfbf69aeefafa80e93b39399c2" upstream="master"/>
+  <project name="compute/ec/mpitest" path="tests/mpitest" revision="ac7b1bd9f25dab2de0d3899d9a9a868fa95c87ef" upstream="master"/>
+  <project name="compute/ec/p4mirror/AI_drop_box" path="p4/driver/hw_ucode/AI_drop_box" revision="527e3fe763f7c46c7d57e140c95f84fa441a9cb6" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/CI_drop_box" path="p4/driver/hw_ucode/CI_drop_box" revision="b5d6a247e2edff30559bc38fa928c034c46a02ab" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/SI_drop_box" path="p4/driver/hw_ucode/SI_drop_box" revision="deb56ac70897e8b09d981abb8eddc4c2960b3568" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/VI_drop_box" path="p4/driver/hw_ucode/VI_drop_box" revision="92c7be821d9f61bda879ef10df1a76bab92717cc" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/adl-inc" path="p4/driver/drivers/adl/include" revision="26b1a7f23cb9ed4a51453245f032e59fbb26948a" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/atombios-vi" path="p4/driver/atombios/DesignProfile/VI" revision="3e8e0df680338019ce30c71e81985d192f21837e" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/cail" path="p4/driver/drivers/cail" revision="340a39b6443457fd5e71f2db2fcd77e2bd7d9d47" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/drivers-inc" path="p4/driver/drivers/inc" revision="345a1479b8dd3a613ee8b7f069966c428dc861b8" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/drivers-make" path="p4/driver/drivers/make" revision="b9ea899176ab2b6683fcda516e595119a94f5723" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/dx-hwlr600" path="p4/driver/drivers/dx/dxx/hwl/r600" revision="bb5be9ca6b0406e5602b8f684eca8d023714bf2c" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/dx-inc" path="p4/driver/drivers/dx/dxx/inc" revision="dae5d0f557a655da48fc2973e43f44063c8f4176" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/dx-utils" path="p4/driver/drivers/dx/dxx/utils" revision="76e5356c82e8d3a1d4f0b287fcc071d5b35b8a43" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/hsa" path="p4/driver/drivers/hsa" revision="688bebb5dd1062fd1347966dda7d3750734503b5" upstream="amd-master"/>
+  <project name="compute/ec/p4mirror/hsaaux" path="p4/driver/drivers/hsaaux" revision="bcfcd499418195e658c887e7f42e3813cd35d701" upstream="amd-master"/>
+  <project name="compute/ec/p4mirror/hsathk" path="p4/driver/drivers/hsathk" revision="94587e8695e4cfc5af8cd34ffac5d50542268fdd" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/main-make" path="p4/driver/make" revision="22cfbe47466cb397331803192cabc428a52a4daf" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/opencl" path="p4/driver/drivers/opencl" revision="7769631b60cb8958e34b1893adc95df8beb10ad8" upstream="amd-master"/>
+  <project name="compute/ec/p4mirror/pp-images" path="p4/driver/powerplay/drivers/powerplay/firmware/images/" revision="2b38630ef8ffc6e56f485edf5b46ce74182ee4aa" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/pp-inc" path="p4/driver/powerplay/drivers/powerplay/inc/" revision="24195a2baa308b2308354b12aa4f8adeaeabb05c" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/pxproxy-inc" path="p4/driver/drivers/pxproxy/inc" revision="6aeef89aa976993a7c9a5a3ab815a706c4f20beb" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/sc" path="p4/driver/drivers/sc" revision="47a64efd0c345903841aafad2dcd14395c1ece15" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/stream_sdk" path="p4/driver/stream_sdk" revision="d73c1506d8a30251dc76d79af585dff3a7aebeb2" upstream="amd-staging"/>
+  <project name="compute/ec/p4mirror/swip" path="p4/driver/drivers/swip" revision="fac3a50c8cb0dfabe13ad39d6eecba10458938e6" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/udx-inc" path="p4/driver/drivers/dx/udx/inc" revision="11b45e2d510089d32aa243552e99d63b3be81f82" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/ugl-inc" path="p4/driver/drivers/opencl/runtime/device/gpu/gslbe/src/promotions/inc" revision="cb20ffc7d36cbeac4e4f238e52f6aebf5dae9db6" upstream="amd-master"/>
+  <project name="compute/ec/p4mirror/ugl-src" path="p4/driver/drivers/opencl/runtime/device/gpu/gslbe/src/promotions/ugl" revision="eefab88bb8a27f56bcc6a2801fb28e9df0effe2d" upstream="amd-master"/>
+  <project name="compute/ec/p4mirror/uvdfwlib-bin" path="p4/driver/drivers/uvdfwlib/bin" revision="677ca5d3c4fc72f92d941c154287bcaf8b337dec" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/uvdfwlib-bin2" path="p4/driver/drivers/uvdfwlib/bin2" revision="a52d678454a52a146bcbff74796220a0a624d53e" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/vcefwlib-bin" path="p4/driver/drivers/vwefwlib/bin" revision="d9c8d8611a7d20d6b9730f2ad9168c23f5b47047" upstream="amd-mainline"/>
+  <project name="compute/ec/p4mirror/vcefwlib-bin" path="p4/driver/drivers/gvwefwlib/bin" revision="d9c8d8611a7d20d6b9730f2ad9168c23f5b47047" upstream="amd-mainline"/>
+  <project name="compute/ec/packaging/docker" path="packaging/docker" revision="a12ea396bcd63baf51ebda5eb4d9423b654ae06b" upstream="amd-master"/>
+  <project name="compute/ec/packaging/meta" path="packaging/meta" revision="e4d37429580a15b153255bb30382f965ce95ed01" upstream="amd-master"/>
+  <project name="compute/ec/packaging/rocm-cmake" path="packaging/rocm-cmake" revision="0aa18202c1789ecec3bece73e68e3af533fae03b" upstream="amd-master"/>
+  <project name="compute/ec/perftest-p2p" path="external/benchmarks/perftest" revision="3b77403e59957283eac41f0f895ff7f10b0b0fd7" upstream="master"/>
+  <project name="compute/ec/prm_conformance" path="tests/prm_conformance" revision="208ab2d317887f86b7a852dd1f5675936e7b6d68" upstream="master"/>
+  <project name="compute/ec/prototype" path="build" revision="8c40a09b4ac2bb45a94d81ae9f0ff6d207d0eed8" upstream="amd-master"/>
+  <project name="compute/ec/rocm-smi" path="rocm-smi" revision="68893bc1c858346a7b8f0a4ed407dbb56018e820" upstream="amd-master"/>
+  <project name="compute/ec/rocm-utils" path="rocm-utils" revision="28a6aad6916971fc01a5f53e3a3f352640038423" upstream="amd-master"/>
+  <project name="compute/ec/shoc" path="external/benchmarks/shoc" revision="bdcb3f6c1ee3fd25daa3c206b11ff0f6802d9d7f" upstream="master"/>
+  <project name="hsa/ec/drivers/hsaaux/hsa_conformance" path="tests/hsa_conformance" revision="7ab33f0ffb47562ec10406497c93fccd8e7ffaed" upstream="amd-staging"/>
+  <project name="hsa/ec/drivers/hsaaux/rocrtst" path="tests/rocrtst" revision="1ff82f662ef31dfb49058c490e9b23be57635e87" upstream="amd-master"/>
+  <project name="hsa/ec/hsa-runtime" path="hsa/runtime" revision="bf2bc488daff3fc220fee8b59681ab427fbb8529" upstream="amd-master"/>
+  <project name="lightning/ec/device-libs" path="external/hcc-tot/rocdl" revision="dc669c5887dcd9ec4c977cbab0ae8b66bb868148" upstream="master"/>
+  <project groups="llvmdeps" name="lightning/ec/device-libs" path="external/device-libs" revision="dc669c5887dcd9ec4c977cbab0ae8b66bb868148" upstream="master"/>
+  <project name="lightning/ec/hcc" path="external/hcc-tot" revision="0473b1573554f9406169b0bda92c67df454b899d" upstream="clang_tot_upgrade-alloca"/>
+  <project groups="llvmdeps" name="lightning/er/clang" path="external/llvm-clang" revision="4890b51dabfcb497d3ba844a8a2a61c68b0be77a" upstream="amd-common"/>
+  <project groups="llvmdeps" name="lightning/er/lld" path="external/lld" revision="5e04fc034092c940c14c790d3782a4893bc8e346" upstream="amd-common"/>
+  <project groups="llvmdeps" name="lightning/er/llvm" path="external/llvm" revision="3b096f15ba2845e0809ff9e8c3682586070df321" upstream="amd-common"/>
+</manifest>
+
